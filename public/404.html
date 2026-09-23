@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Page not found — Jumble Step</title>
+  <meta name="robots" content="noindex">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+
+  <style>
+    :root {
+      color-scheme: light;
+      --background: #f7f5ef;
+      --surface: rgba(255, 255, 255, 0.72);
+      --text: #20221f;
+      --muted: #5f645d;
+      --border: rgba(32, 34, 31, 0.14);
+      --accent: #315c49;
+      --max-width: 70rem;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+      margin: 0;
+      min-height: 100vh;
+      background:
+        radial-gradient(circle at top left, rgba(119, 153, 128, 0.18), transparent 32rem),
+        var(--background);
+      color: var(--text);
+      font-family:
+        Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+        "Segoe UI", sans-serif;
+      line-height: 1.6;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    .shell {
+      width: min(calc(100% - 2rem), var(--max-width));
+      margin-inline: auto;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-block: 1.25rem;
+    }
+
+    .brand {
+      font-size: 1.05rem;
+      font-weight: 750;
+      letter-spacing: -0.02em;
+      text-decoration: none;
+    }
+
+    nav {
+      display: flex;
+      gap: 1rem;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    nav a {
+      text-decoration: none;
+    }
+
+    nav a:hover,
+    nav a:focus-visible {
+      color: var(--text);
+      text-decoration: underline;
+      text-underline-offset: 0.2rem;
+    }
+
+    main {
+      flex: 1;
+      padding-block: clamp(3rem, 8vw, 7.5rem);
+    }
+
+    .hero {
+      max-width: 52rem;
+    }
+
+    .eyebrow {
+      margin: 0 0 1rem;
+      color: var(--accent);
+      font-size: 0.82rem;
+      font-weight: 750;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      max-width: 12ch;
+      margin: 0;
+      font-size: clamp(3.25rem, 10vw, 7.5rem);
+      line-height: 0.94;
+      letter-spacing: -0.065em;
+    }
+
+    .intro {
+      max-width: 40rem;
+      margin: 2rem 0 0;
+      color: var(--muted);
+      font-size: clamp(1.2rem, 2.3vw, 1.65rem);
+      line-height: 1.45;
+    }
+
+    .home-link {
+      display: inline-flex;
+      margin-top: 2rem;
+      padding: 0.8rem 1rem;
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      background: var(--surface);
+      font-weight: 700;
+      text-decoration: none;
+      backdrop-filter: blur(10px);
+    }
+
+    .home-link:hover,
+    .home-link:focus-visible {
+      border-color: var(--accent);
+    }
+
+    footer {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 0.75rem 1.5rem;
+      padding-block: 1.5rem 2.5rem;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+
+    footer a {
+      text-underline-offset: 0.2rem;
+    }
+
+    @media (max-width: 42rem) {
+      nav {
+        display: none;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header class="shell">
+    <a class="brand" href="/" aria-label="Jumble Step home">Jumble Step</a>
+
+    <nav aria-label="Primary navigation">
+      <a href="/#work">What we build</a>
+      <a href="/#about">About</a>
+      <a href="/#footer">Contact</a>
+    </nav>
+  </header>
+
+  <main class="shell">
+    <section class="hero" aria-labelledby="page-title">
+      <p class="eyebrow">Error 404</p>
+
+      <!-- EDIT: This is the 404 page headline. -->
+      <h1 id="page-title">Wrong step.</h1>
+
+      <!-- EDIT: This is the 404 page description. -->
+      <p class="intro">
+        The page you're looking for doesn't exist. It may have moved, or the link may be wrong.
+      </p>
+
+      <a class="home-link" href="/">Back to the homepage</a>
+    </section>
+  </main>
+
+  <footer id="footer" class="shell">
+    <span>© 2026 Jumble Step LLC</span>
+    <p>hello at jumblestep dot com</p>
+  </footer>
+</body>
+</html>
